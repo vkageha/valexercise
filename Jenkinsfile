@@ -15,7 +15,7 @@ sh "ls -l"
 stage('Build Docker Image and push image to DockerHub')
 
 {
-sh "docker build -t valexercise:version1"
+sh "docker build -t valexercise:version1 ."
 }
   
 stage('Docker login to hub and push the image'){
