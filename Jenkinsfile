@@ -19,7 +19,7 @@ sh "docker build -t valexercise:version1"
 }
   
 stage('Docker login to hub and push the image'){
-sh "docker login -u 'vkageha' -p 'Vale1991'"
+sh "docker login -u 'vkageha' -p 'Imara@0001'"
 sh "docker tag valexercise:version1 vkageha/valexercise:version1"
 sh "docker push vkageha/valexercise:version1"
 }
